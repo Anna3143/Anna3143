@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+</head>
+
+<body>
+  
+  <section class="banner">
+    <div class="banner__wrapper">
+      <h1>存放技術之地</h1>
+      <div>Welcome to my blog</div>
+    </div>
+  </section>
+  <div class="login-wrapper">
+    <h2>Register</h2>
+    <h2><%= errorMessage %></h2>
+    <form method="POST" action="/register">
+     <div class="input__wrapper">
+        <div class="input__label">USERNAME</div>
+        <input class="input__field" type="text" name="username" />
+      </div>
+         
+      <div class="input__wrapper">
+        <div class="input__label">PASSWORD</div>
+        <input class="input__field" type="password" name="password" />
+      </div>
+      <input type='submit' value="註冊" />
+    </form>
+     
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+
+ <nav class="navbar">
+    <div class="wrapper">
+      <div class="navbar__site-name">
+        Just A Bite!
+      </div>
+      <ul class="navbar__list">
+       
+        <% if(username) { %>        
+        <li><a href="/menu_add">新增菜單</a></li>
+        <li><a href="/menu_admin">編輯菜單</a></li>
+        <li><a href="/logout">登出</a></li>
+        <% } else { %>
+        <li><a href="/menu">我要點餐</a></li>
+        <li><a href="/login">管理登入</a></li>
+        <% } %>
+      </ul>
+    </div>
+  </nav>
